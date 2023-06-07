@@ -8,11 +8,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnheader"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:background="@drawable/header"
+        android:textStyle="bold"
+        android:textColor="@color/white"
         android:text="Danh sách công việc cần làm" />
 
     <ListView
