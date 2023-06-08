@@ -39,21 +39,19 @@
 
 
     </RelativeLayout>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnheader"
+    <TextView
+        android:id="@+id/tvToast"
         android:layout_below="@+id/header"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/header"
-        android:textStyle="bold"
         android:textColor="@color/white"
-        android:textSize="15dp"
-        android:text="Danh sách công việc cần làm" />
+        android:textStyle="bold"
+        android:text="DANH SÁCH CÔNG VIỆC CẦN LÀM" />
 
     <ListView
         android:id="@+id/list_item"
-        android:layout_below="@+id/btnheader"
+        android:layout_below="@+id/tvToast"
         android:background="@drawable/body"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
