@@ -11,11 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="130dp"
         >
-        <androidx.appcompat.widget.AppCompatImageView
+        <ImageView
             android:id="@+id/ivavatar"
-            android:background="@drawable/avatar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/avatar"
             tools:srcCompat="@tools:sample/avatars" />
 
         <LinearLayout
@@ -52,9 +52,10 @@
     <ListView
         android:id="@+id/list_item"
         android:layout_below="@+id/tvToast"
+        android:layout_above="@+id/btnadd"
         android:background="@drawable/body"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnadd"
