@@ -17,7 +17,8 @@
         android:layout_below="@+id/btnBack"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Mời bạn nhập nội dung công việc" />
+        android:hint="Mời bạn nhập công việc"
+         />
 
     <Button
         android:id="@+id/btnSave"
