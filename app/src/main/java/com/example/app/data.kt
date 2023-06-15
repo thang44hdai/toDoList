@@ -1,8 +1,7 @@
 package com.example.app
 
 class data(
-     image: String,
-     name: String,
-     age: Int
+     val name: String,
+     val date: String
 ) {
 }
