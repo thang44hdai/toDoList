@@ -15,7 +15,6 @@
             android:id="@+id/ivavatar"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/avatar"
             tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
         <LinearLayout
@@ -50,13 +49,13 @@
         android:textStyle="bold"
         android:text="DANH SÁCH CÔNG VIỆC CẦN LÀM" />
 
-    <ListView
-        android:id="@+id/list_item"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lvItem"
         android:layout_below="@+id/tvToast"
         android:layout_above="@+id/btnadd"
         android:background="@drawable/body"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnadd"
@@ -66,4 +65,6 @@
         android:background="@drawable/btnadd"
         android:textColor="@color/white"
         android:text="THÊM CÔNG VIỆC" />
+
+
 </RelativeLayout>
