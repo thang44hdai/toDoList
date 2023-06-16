@@ -12,9 +12,9 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
+
 class adapter(var ds: ArrayList<data>): RecyclerView.Adapter<adapter.data_holder>() {
     inner class data_holder(list : View) : RecyclerView.ViewHolder(list)
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): data_holder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item, parent, false)
         return data_holder(view)
@@ -32,7 +32,7 @@ class adapter(var ds: ArrayList<data>): RecyclerView.Adapter<adapter.data_holder
             val cbtick = findViewById<CheckBox>(R.id.cbtick)
             val rB = findViewById<RatingBar>(R.id.rB)
             tvname.text = ds[position].name
-            tvId.text = ds[position].id
+            tvId.text = "ID: " + ds[position].id
             tvdate.text = ds[position].date
         }
     }

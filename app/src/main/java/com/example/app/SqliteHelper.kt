@@ -13,5 +13,4 @@ class SqliteHelper(context: Context): SQLiteOpenHelper(context, "USERDB", null,1
 
     }
 
-
 }

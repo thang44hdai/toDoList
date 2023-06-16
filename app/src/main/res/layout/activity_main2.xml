@@ -43,5 +43,5 @@
         android:layout_height="50dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Nhập hàng muốn xóa"/>
+        android:hint="Nhập ID muốn xóa"/>
 </RelativeLayout>
