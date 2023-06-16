@@ -34,5 +34,11 @@ class MainActivity2 : AppCompatActivity() {
             finish()
         }
 
+        binding.btnDelete.setOnClickListener()
+        {
+            var cv = ContentValues()
+
+        }
+
     }
 }
