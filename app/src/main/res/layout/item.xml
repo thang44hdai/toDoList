@@ -8,10 +8,20 @@
             android:layout_height="wrap_content"
              />
         <TextView
-            android:id="@+id/tvname"
-            android:layout_toRightOf="@+id/cbtick"
+            android:id="@+id/tvId"
             android:textColor="@color/white"
             android:textStyle="bold"
+            android:layout_toRightOf="@+id/cbtick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="ID" />
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_below="@+id/tvId"
+            android:layout_toRightOf="@+id/cbtick"
+            android:textColor="@color/white"
+            android:textStyle="italic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Name" />
@@ -19,7 +29,7 @@
         <TextView
             android:id="@+id/tvdate"
             android:textColor="@color/white"
-            android:textStyle="bold"
+            android:textStyle="italic"
             android:layout_below="@+id/tvname"
             android:layout_toRightOf="@+id/cbtick"
             android:layout_width="wrap_content"

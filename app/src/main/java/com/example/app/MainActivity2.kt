@@ -19,7 +19,6 @@ class MainActivity2 : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-
         // set database
         // ContentValues()
         var helper = SqliteHelper(applicationContext)
@@ -36,8 +35,10 @@ class MainActivity2 : AppCompatActivity() {
 
         binding.btnDelete.setOnClickListener()
         {
-            var cv = ContentValues()
-
+            val selection = "id = ?"
+            val selectionArgs = arrayOf(binding.edtDelete.text.toString())
+            db.delete("users", selection, selectionArgs)
+            finish()
         }
 
     }

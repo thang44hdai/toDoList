@@ -28,11 +28,9 @@ class MainActivity : AppCompatActivity() {
         var rs = db.rawQuery("SELECT * FROM users", null)
         //
         var ds = ArrayList<data>()
-        if(rs.moveToLast())
-            ds.add(data(rs.getString(1).toString(), "a2s"))
         if(rs.moveToFirst())
             do{
-                ds.add(data(rs.getString(1).toString(), "0"))
+                ds.add(data(rs.getString(0), rs.getString(1).toString(), "16/6/2023"))
             }while (rs.moveToNext())
         val adapter = adapter(ds)
         binding.lvItem.adapter = adapter

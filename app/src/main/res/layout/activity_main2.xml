@@ -15,14 +15,15 @@
     <EditText
         android:id="@+id/edtInput"
         android:layout_below="@+id/btnBack"
-        android:layout_width="match_parent"
+        android:layout_width="260dp"
         android:layout_height="50dp"
         android:hint="Mời bạn nhập công việc"
          />
 
     <Button
         android:id="@+id/btnSave"
-        android:layout_below="@+id/edtInput"
+        android:layout_below="@id/btnBack"
+        android:layout_toRightOf="@+id/edtInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save" />
@@ -31,8 +32,16 @@
         android:id="@+id/btnDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/btnSave"
-        android:layout_marginLeft="50dp"
-        android:layout_below="@+id/edtInput"
+        android:layout_toRightOf="@+id/edtDelete"
+        android:layout_below="@+id/btnSave"
         android:text="Delete" />
+
+    <EditText
+        android:id="@+id/edtDelete"
+        android:layout_below="@+id/btnSave"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập hàng muốn xóa"/>
 </RelativeLayout>
