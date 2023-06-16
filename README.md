@@ -1,2 +1,2 @@
 # toDoList
-Using sqlite, content provider, datepicker
+Using sqlite, content provider, datepicker, recyclerview
