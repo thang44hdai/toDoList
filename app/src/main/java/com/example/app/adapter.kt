@@ -27,10 +27,13 @@ class adapter(var ds: ArrayList<data>): RecyclerView.Adapter<adapter.data_holder
     override fun onBindViewHolder(holder: data_holder, position: Int) {
         holder.itemView.apply{
             val tvname = findViewById<TextView>(R.id.tvname)
+            val tvId = findViewById<TextView>(R.id.tvId)
             val tvdate = findViewById<TextView>(R.id.tvdate)
             val cbtick = findViewById<CheckBox>(R.id.cbtick)
             val rB = findViewById<RatingBar>(R.id.rB)
             tvname.text = ds[position].name
+            tvId.text = ds[position].id
+            tvdate.text = ds[position].date
         }
     }
 
