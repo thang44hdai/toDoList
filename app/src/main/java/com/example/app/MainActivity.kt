@@ -30,6 +30,10 @@ class MainActivity : AppCompatActivity() {
         var ds = ArrayList<data>()
         if(rs.moveToLast())
             ds.add(data(rs.getString(1).toString(), "a2s"))
+        if(rs.moveToFirst())
+            do{
+                ds.add(data(rs.getString(1).toString(), "0"))
+            }while (rs.moveToNext())
         val adapter = adapter(ds)
         binding.lvItem.adapter = adapter
         binding.lvItem.layoutManager = LinearLayoutManager(
