@@ -28,17 +28,36 @@
         android:layout_height="wrap_content"
         android:text="Save" />
 
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtInput"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:text="DatePicker" />
+
+    <ImageButton
+        android:id="@+id/btnDate"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtInput"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_toRightOf="@+id/tvDate"
+        app:srcCompat="@drawable/date" />
+
     <Button
         android:id="@+id/btnDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/edtDelete"
-        android:layout_below="@+id/btnSave"
+        android:layout_below="@+id/btnDate"
         android:text="Delete" />
 
     <EditText
         android:id="@+id/edtDelete"
-        android:layout_below="@+id/btnSave"
+        android:layout_below="@+id/btnDate"
         android:layout_width="260dp"
         android:layout_height="50dp"
         android:ems="10"
