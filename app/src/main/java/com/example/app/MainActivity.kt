@@ -26,11 +26,11 @@ class MainActivity : AppCompatActivity() {
         var helper = SqliteHelper(applicationContext)
         val db = helper.readableDatabase
         var rs = db.rawQuery("SELECT * FROM users", null)
-        //
+        //a
         var ds = ArrayList<data>()
         if(rs.moveToFirst())
             do{
-                ds.add(data(rs.getString(0), rs.getString(1).toString(), "16/6/2023"))
+                ds.add(data(rs.getString(0).toString(), rs.getString(1), rs.getString(2)))
             }while (rs.moveToNext())
         val adapter = adapter(ds)
         binding.lvItem.adapter = adapter
